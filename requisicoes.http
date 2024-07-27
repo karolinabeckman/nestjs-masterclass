@@ -1,4 +1,24 @@
-GET http://localhost:3000/app/teste
+GET http://localhost:3000/usuario
 
 ###
-GET http://localhost:3000/app
+GET http://localhost:3000/usuario/1
+
+###
+POST http://localhost:3000/usuario
+content-type: application/json
+
+{
+    "nome": "Roberto Pereira Filho",
+    "email": "robertopf@teste.com.br",
+    "senha": "65432100"
+}
+###
+PATCH  http://localhost:3000/usuario/1
+content-type: application/json
+
+{
+    "nome": "Maria Karolina Beckman Pires",
+    "email": "karolinabeckman1@teste.com.br"
+}
+###
+DELETE http://localhost:3000/usuario/2
